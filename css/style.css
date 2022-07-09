@@ -13,6 +13,9 @@
     padding: 0;
     
 }
+p {
+    color: rgb(85, 85, 85);
+}
 button {
     height: 36px;
     width: 90px;
@@ -152,7 +155,7 @@ li {
     display:flex;
     flex-direction:column;
     height:auto;
-    padding:36px;
+    padding:24px;
 }
 .a-card > *{
     border-bottom:2px solid lightgray;
@@ -163,6 +166,9 @@ li {
 }
 .a-card div p {
     font-size: 0.8rem;
+}
+.a-card div h4 {
+    padding-top: 12px;
 }
 .announcement-content {
     display:grid;
@@ -183,4 +189,16 @@ li {
     height:100%;
     background-color:white;
     border-radius: var(--card-round);
+    display:flex;
+    flex-direction:column;
+    padding: 18px;
+}
+.profile {
+    height:48px;
+    margin-right: 12px;
+}
+.trending-card > * {
+    flex-basis: 100%;
+    display:flex;
+    align-items: center;
 }
