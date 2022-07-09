@@ -1,3 +1,4 @@
+/* General Section */
 :root {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -18,9 +19,7 @@ button {
 .logo {
     height:48px;
 }
-button::before {
-    
-}
+
 ul {
     list-style: none;
 }
@@ -34,11 +33,13 @@ li {
 .misc {
     margin-right: 12px;
 }
+/* Container Section */
 .grid-container {
     display:grid;
     grid-template-columns: minmax(256px, 1fr) 4fr;
     grid-template-rows: 1fr 3.5fr;
 }
+/* Side-Bar Section */
 .dashboard {
     color:white;
     padding-left: 24px;
@@ -55,14 +56,37 @@ li {
     align-items: center;
     gap:6px;
 }
+/* Navigation Section */
 .home-nav {
 }
 .top-user-ui {
+    padding: 4px 36px 0 36px;
     height: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border:1px solid;
+}
+.user-left {
+    width: 500px;
+    display:flex;
+    align-items:center;
+}
+
+.search-bar {
+    height: 28px;
+    width: 100%;
+    background-color:#E2E8F0;
+    border:0;
+    border-radius: 36px;
+}
+.profile-m {
+    height: 42px;
+}
+.user-right {
+    display:flex;
+    align-items: center;
+    gap:24px;
 }
 .bot-user-ui {
     height: 70%;
@@ -71,7 +95,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Content Section */
 .content {
     background-color: #E2E8F0;
     display: grid;
