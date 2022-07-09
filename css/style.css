@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     --main-color: #1992D4;
-    --matte-balck: #171717;
+    --matte-black: #30302F;
     --well-color: #E2E8F0;
     --content-padding: 18px;
     --card-round: 12px;
@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 button {
     height: 36px;
@@ -21,6 +22,7 @@ button {
     border: 0;
     color:white;
     font-weight:bold;
+    
 }
 .logo {
     height:48px;
@@ -72,7 +74,8 @@ li {
 }
 /* Navigation Section */
 .home-nav {
-    box-shadow: 0 5px 5px gray;
+    color:var(--matte-black);
+    box-shadow: 0 5px 5px lightgray;
     z-index: 1;
 }
 .top-user-ui {
@@ -125,6 +128,7 @@ li {
     grid-template-columns: 3fr 1.2fr;
     grid-template-rows: 50px;
     gap: 18px;
+    color:var(--matte-black);
 }
 .content-p {
     padding-left: var(--content-padding);
@@ -138,13 +142,27 @@ li {
 .card {
     background-color:white;
     height: 200px;
-    border-left:10px solid var(--main-color);
+    border-left:10px solid #FDC111;
     border-radius: var(--card-round);
 }
 
 .a-card{
     background-color:white;
     border-radius: var(--card-round);
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    padding:36px;
+}
+.a-card > *{
+    border-bottom:2px solid lightgray;
+    flex-basis: 100%;
+}
+.a-card div:last-child {
+    border-bottom: 0;
+}
+.a-card div p {
+    font-size: 0.8rem;
 }
 .announcement-content {
     display:grid;
