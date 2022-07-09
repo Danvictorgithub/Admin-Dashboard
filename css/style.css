@@ -15,6 +15,7 @@ button {
     background-color: #1992D4;
     border: 0;
     color:white;
+    font-weight:bold;
 }
 .logo {
     height:48px;
@@ -65,7 +66,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid;
 }
 .user-left {
     width: 500px;
@@ -83,17 +83,25 @@ li {
 .profile-m {
     height: 42px;
 }
+.profile-h {
+    height: 64px;
+}
 .user-right {
     display:flex;
     align-items: center;
     gap:24px;
 }
 .bot-user-ui {
+    padding: 4px 36px 0 36px;
     height: 70%;
     display: flex;
-    border:1px solid red;
     justify-content: space-between;
     align-items: center;
+}
+.bot-left {
+    display:flex;
+    align-items:center;
+    gap:24px;
 }
 /* Content Section */
 .content {
