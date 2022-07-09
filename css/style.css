@@ -159,6 +159,9 @@ li {
 .card-btn {
     align-self: flex-end;
 }
+.btn-c {
+    margin-left:24px;
+}
 .a-card{
     background-color:white;
     border-radius: var(--card-round);
