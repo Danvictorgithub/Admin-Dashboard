@@ -5,32 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <title>Admin dashboard</title>
 </head>
 <body>
     <div class="grid-container">
         <div class="dashboard">
-            <h1>Dashboard</h1>
+            <div class="side-name">
+                <img src="./img/logo.png" class="logo">
+                <h1>Dashboard</h1>
+            </div>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messanges</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li> 
+                <li><img src="./img/home-account.png" class="misc">Home</li>
+                <li><img src="./img/account.png" class="misc">Profile</li>
+                <li><img src="./img/message.png" class="misc">Messages</li>
+                <li><img src="./img/clock.png" class="misc">History</li>
+                <li><img src="./img/task.png" class="misc">Tasks</li>
+                <li><img src="./img/communities.png" class="misc">Communities</li> 
             </ul>
 
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><img src="./img/setting.png" class="misc">Settings</li>
+                <li><img src="./img/support.png" class="misc">Support</li>
+                <li><img src="./img/shield-check.png" class="misc">Privacy</li>
             </ul>
         </div>
 
         <div class="home-nav">
             
             <div class="top-user-ui">
-                <div>X<input type="text"></div>
+                <div>
+                    <img src="./img/magnify.png">
+                    <input class="search-bar"type="text">
+                </div>
                 <div>Y O Dan Victor Lofranco</div>
             </div>
 
